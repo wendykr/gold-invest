@@ -1,7 +1,7 @@
 .header__container {
   margin: 0 auto;
   padding: 20px;
-  max-width: 375px;
+  max-width: 350px;
   display: flex;
   justify-content: space-between;
   align-items: center;

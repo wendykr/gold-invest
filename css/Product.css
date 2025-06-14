@@ -3,10 +3,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 14px;
+  gap: 10px;
 }
 .product__item {
-  width: 160px;
+  width: 150px;
   height: 267px;
   border: 1px solid #c4c4c4;
   font-size: 12px;
