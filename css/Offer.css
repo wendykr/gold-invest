@@ -1,0 +1,108 @@
+.offer {
+  text-align: center;
+}
+.offer__container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 375px;
+  height: auto;
+  background: linear-gradient(to bottom, #131313 0px, #131313 304px, #ffffff 304px, #ffffff 100%);
+}
+.offer__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+}
+.offer__wrapper {
+  position: relative;
+}
+.offer__list {
+  display: flex;
+}
+.offer__item {
+  width: 167px;
+  height: 284px;
+  background-color: transparent;
+  text-align: left;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  position: relative;
+}
+.offer__item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+.offer__item--img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  z-index: 1;
+}
+.offer__item--text {
+  padding: 10px 10px 80px 10px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  z-index: 3;
+  align-self: end;
+  justify-self: start;
+}
+.offer__item--subtitle {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.offer__item--title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.offer__button {
+  margin: 0;
+  margin-left: auto;
+  padding: 25px 20px;
+  width: 140px;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: #ecb235;
+  color: #131313;
+  text-align: left;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  z-index: 4;
+  cursor: pointer;
+}
+.offer__button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.news__title {
+  margin-top: 100px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.news__button {
+  margin: 30px auto;
+  padding: 20px;
+  width: 243px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+.news__button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}/*# sourceMappingURL=Offer.css.map */

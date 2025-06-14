@@ -1,0 +1,144 @@
+.offer {
+  text-align: center;
+  // background: linear-gradient(
+  //   to bottom,
+  //   #131313 0px,
+  //   #131313 304px,
+  //   #ffffff 304px,
+  //   #ffffff 100%
+  // );
+
+  &__container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 375px;
+    height: auto;
+    // background-color: transparent;
+    background: linear-gradient(
+      to bottom,
+      #131313 0px,
+      #131313 304px,
+      #ffffff 304px,
+      #ffffff 100%
+    );
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 167px;
+    height: 284px;
+    background-color: transparent;
+    text-align: left;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 2;
+    }
+
+
+    &--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      z-index: 1;
+    }
+
+    &--text {
+      padding: 10px 10px 80px 10px;
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      z-index: 3;
+      align-self: end;
+      justify-self: start;
+    }
+
+    &--subtitle {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+
+    &--title {
+      margin: 0;
+      font-size: 24px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    margin-left: auto;
+    padding: 25px 20px;
+    width: 140px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #ecb235;
+    color: #131313;
+    text-align: left;
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    z-index: 4;
+
+    cursor: pointer;
+    // transition: background-color 0.2s linear, color 0.2s linear;
+
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  }
+}
+
+.news {
+
+  &__title {
+    margin-top: 100px;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__button {
+    margin: 30px auto;
+    padding: 20px;
+    width: 243px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+
+    cursor: pointer;
+    // transition: background-color 0.2s linear, color 0.2s linear;
+
+    &:hover {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  }
+}

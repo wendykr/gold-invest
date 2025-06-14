@@ -1,0 +1,46 @@
+.header__container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 375px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+.header__logo {
+  width: 106px;
+  height: 39px;
+  background-color: #e9e9e9;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.header__info {
+  display: flex;
+  gap: 16px;
+}
+.header__search {
+  cursor: pointer;
+}
+.header__backet {
+  display: flex;
+  gap: 4px;
+}
+.header__backet--button {
+  font-size: 14px;
+}
+.header__backet--count {
+  width: 21px;
+  height: 21px;
+  font-size: 12px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu {
+  cursor: pointer;
+}/*# sourceMappingURL=Header.css.map */
