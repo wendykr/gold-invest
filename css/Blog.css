@@ -1,6 +1,6 @@
 .blog__container {
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 80px 20px;
   max-width: 350px;
   height: auto;
   background-color: #131313;
@@ -75,4 +75,10 @@
 .article__text--icon {
   width: 24px;
   height: 24px;
+}
+.article__button {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  z-index: 4;
 }/*# sourceMappingURL=Blog.css.map */

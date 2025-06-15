@@ -11,9 +11,6 @@
 .offer__title {
   color: #ffffff;
 }
-.offer__wrapper {
-  position: relative;
-}
 .offer__list {
   display: flex;
 }
@@ -64,28 +61,14 @@
   color: #ffffff;
 }
 .offer__button {
-  margin: 0;
-  margin-left: auto;
-  padding: 25px 20px;
-  width: 140px;
-  font-size: 12px;
-  font-weight: 500;
-  background-color: #ecb235;
-  color: #131313;
-  text-align: left;
   position: absolute;
   bottom: -50px;
   right: 0;
   z-index: 4;
-  cursor: pointer;
-}
-.offer__button:hover {
-  background-color: #000000;
-  color: #ffffff;
 }
 
 .news__title {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 .news__button {
   margin: 30px auto;

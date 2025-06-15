@@ -1,3 +1,4 @@
+import { Button } from "../Button/Button";
 import { Product } from "../Product/Product";
 import "./Offer.scss";
 
@@ -6,7 +7,7 @@ export const Offer = () => {
     <section className="offer">
       <div className="offer__container">
         <h2 className="offer__title title">Vyberte si z naši nabídky</h2>
-        <div className="offer__wrapper">
+        <div className="wrapper">
           <div className="offer__list">
             <div className="offer__item">
               <img
@@ -31,7 +32,9 @@ export const Offer = () => {
               </div>
             </div>
           </div>
-          <div className="offer__button">Zobrazit více</div>
+          <div className="offer__button">
+            <Button />
+          </div>
         </div>
 
         <h2 className="news__title title">Novinky</h2>

@@ -1,0 +1,23 @@
+.button {
+  margin: 0;
+  margin-left: auto;
+  padding: 25px 16px;
+  width: 140px;
+  background-color: #ecb235;
+  color: #131313;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button__text {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+}
+.button:hover {
+  background-color: #d29a03;
+}/*# sourceMappingURL=Button.css.map */
