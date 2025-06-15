@@ -5,7 +5,7 @@ export const Offer = () => {
   return (
     <section className="offer">
       <div className="offer__container">
-        <h3 className="offer__title">Vyberte si z naši nabídky</h3>
+        <h2 className="offer__title title">Vyberte si z naši nabídky</h2>
         <div className="offer__wrapper">
           <div className="offer__list">
             <div className="offer__item">
@@ -34,7 +34,7 @@ export const Offer = () => {
           <div className="offer__button">Zobrazit více</div>
         </div>
 
-        <h2 className="news__title">Novinky</h2>
+        <h2 className="news__title title">Novinky</h2>
         <Product />
         <div className="news__button">Zobrazit více produktů</div>
       </div>
