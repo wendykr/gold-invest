@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <header className="header">
       <div className="header__container">
-        <div className="header__logo">LOGO</div>
+        <div className="header__logo">Logo</div>
         <div className="header__info">
           <img
             src="/search.svg"

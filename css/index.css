@@ -32,4 +32,10 @@ body {
 
 .wrapper {
   position: relative;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  line-height: 170%;
 }/*# sourceMappingURL=index.css.map */

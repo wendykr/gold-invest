@@ -1,6 +1,6 @@
 import "./Newsletter.scss";
 
-export const Newsleter = () => {
+export const Newsletter = () => {
   return (
     <div className="newsletter">
       <div className="newsletter__container">
