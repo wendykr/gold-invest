@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { IProduct } from "../../models/Product.ts";
 import "./Products.scss";
+import { Product } from "../Product/Product.tsx";
 
 interface ProductsProps {
   isShowAll: boolean;
@@ -47,7 +48,7 @@ export const Products: React.FC<ProductsProps> = ({isShowAll}) => {
   };
 
   return (
-    <div className="product">
+    <div className="products">
       {isLoading ? (
         <div>Načítám data</div>
       ) : error ? (
@@ -56,31 +57,14 @@ export const Products: React.FC<ProductsProps> = ({isShowAll}) => {
         productsData
           .slice(0, isShowAll ? productsData.length : 4)
           .map((product, index) => (
-            <div className="product__item" key={index}>
-              <div className="product__item--container">
-                <img
-                  src={`${product.imgSrc}`}
-                  className="product__item--img"
-                  alt={product.title}
-                />
-              </div>
-              <div className="product__item--info">
-                <h3 className="product__item--title">{product.title}</h3>
-                <div className="product__item--grid">
-                  <p
-                    className={`product__item--status ${getStatusClass(
-                      product.availability
-                    )}`}
-                  >
-                    {product.availability}
-                  </p>
-                  <p className="product__item--price">{product.price} CZK</p>
-                  <div className="product__item--button">
-                    <img src="/shopping-cart.svg" alt="cart icon" />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Product
+              key={index}
+              imgSrc={product.imgSrc}
+              title={product.title}
+              getStatusClass={getStatusClass}
+              availability={product.availability}
+              price={product.price}
+            />
           ))
       ) : (
         <div>Žádná data</div>
