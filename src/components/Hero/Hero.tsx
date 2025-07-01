@@ -1,6 +1,6 @@
 import "./Hero.scss";
 
-export const Hero = () => {
+export const Hero: React.FC = () => {
   return (
     <section className="hero">
       <div className="hero__container">
@@ -23,20 +23,26 @@ export const Hero = () => {
       </div>
       <div className="hero__secondary">
         <div className="hero__secondary--item item--01">
-          <h2 className="hero__title">Lorem ipsum dolor sit amet, consectetur</h2>
+          <h2 className="hero__title">
+            Lorem ipsum dolor sit amet, consectetur
+          </h2>
           <div className="hero__button">Zobrazit</div>
         </div>
         <div className="hero__secondary--item item--02">
-          <h2 className="hero__title">Lorem ipsum dolor sit amet, consectetur</h2>
+          <h2 className="hero__title">
+            Lorem ipsum dolor sit amet, consectetur
+          </h2>
           <div className="hero__button">Zobrazit</div>
         </div>
         <div className="hero__secondary--item item--03">
-          <h2 className="hero__title">Lorem ipsum dolor sit amet, consectetur</h2>
+          <h2 className="hero__title">
+            Lorem ipsum dolor sit amet, consectetur
+          </h2>
           <div className="hero__button">Zobrazit</div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 

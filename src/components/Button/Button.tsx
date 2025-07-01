@@ -1,6 +1,6 @@
 import "./Button.scss";
 
-export const Button = () => {
+export const Button: React.FC = () => {
   return (
     <div className="button">
       <p className="button__text">Zobrazit více</p>

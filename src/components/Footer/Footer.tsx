@@ -1,6 +1,6 @@
 import "./Footer.scss";
 
-export const Footer = () => {
+export const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="footer__container">
@@ -136,7 +136,12 @@ export const Footer = () => {
             <li className="copyright__item">Copyright 2021 Constant Invest</li>
             <li className="copyright__item">
               <div className="copyright__text--wrapp">
-                <span className="copyright__text">vytvořil <a href="#" className="copyright__link">Shoptet</a></span>
+                <span className="copyright__text">
+                  vytvořil{" "}
+                  <a href="#" className="copyright__link">
+                    Shoptet
+                  </a>
+                </span>
                 <span className="copyright__text"> | </span>
                 <img src="/logo-miranda.svg" alt="logo miranda" />
                 <a href="#" className="copyright__link">

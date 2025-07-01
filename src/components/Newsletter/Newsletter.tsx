@@ -1,6 +1,6 @@
 import "./Newsletter.scss";
 
-export const Newsletter = () => {
+export const Newsletter: React.FC = () => {
   return (
     <div className="newsletter">
       <div className="newsletter__container">
@@ -17,7 +17,11 @@ export const Newsletter = () => {
             />
             <button className="form__button" type="submit">
               <span>Odeslat</span>
-              <img src="/arrow-btn.svg" className="form__button--arrow" alt="arrow icon" />
+              <img
+                src="/arrow-btn.svg"
+                className="form__button--arrow"
+                alt="arrow icon"
+              />
             </button>
           </form>
         </div>

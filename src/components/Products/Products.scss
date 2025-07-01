@@ -86,11 +86,11 @@
       grid-template-areas:
         "status cart"
         "price  cart";
+      align-items: end;
     }
 
     &--status {
       margin: 0;
-      color: #63da46;
       grid-area: status;
     }
 
@@ -116,4 +116,16 @@
       }
     }
   }
+}
+
+.in-stock {
+  color: #63da46;
+}
+
+.out-stock {
+  color: #f24d4d;
+}
+
+.to-order {
+  color: #979797;
 }

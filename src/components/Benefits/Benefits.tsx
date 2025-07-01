@@ -1,6 +1,6 @@
 import "./Benefits.scss";
 
-export const Benefits = () => {
+export const Benefits: React.FC = () => {
   return (
     <section className="benefits">
       <div className="benefits__container">

@@ -1,8 +1,15 @@
+import { useState } from "react";
 import { Button } from "../Button/Button";
-import { Product } from "../Product/Product";
+import { Products } from "../Products/Products";
 import "./Offer.scss";
 
-export const Offer = () => {
+export const Offer: React.FC = () => {
+  const [isShowAll, setIsShowAll] = useState<boolean>(false);
+
+  const toggleShowAll = () => {
+    setIsShowAll(prev => !prev);
+  }
+
   return (
     <section className="offer">
       <div className="offer__container">
@@ -38,8 +45,10 @@ export const Offer = () => {
         </div>
 
         <h2 className="news__title title">Novinky</h2>
-        <Product />
-        <div className="news__button">Zobrazit více produktů</div>
+        <Products isShowAll={isShowAll} />
+        <div className="news__button" onClick={toggleShowAll}>
+          {isShowAll ? "Zobrazit méně produktů" : "Zobrazit více produktů"}
+        </div>
       </div>
     </section>
   );

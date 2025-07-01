@@ -1,7 +1,7 @@
 import { Button } from "../Button/Button";
 import "./Blog.scss";
 
-export const Blog = () => {
+export const Blog: React.FC = () => {
   return (
     <section className="blog">
       <div className="blog__container">
