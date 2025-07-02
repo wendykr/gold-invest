@@ -32,6 +32,7 @@ export const Products: React.FC<ProductsProps> = ({isLoading, error, productsDat
               getStatusClass={getStatusClass}
               availability={product.availability}
               price={product.price}
+              flags={product.flags}
             />
           ))
       ) : (
