@@ -111,9 +111,6 @@
   }
 
   &__label {
-    width: 75px;
-    height: auto;
-    color: #ffffff;
     position: absolute;
     top: 30px;
     right: 0;
@@ -121,21 +118,6 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-
-    &--news {
-      padding-left: 10px;
-      background-color: #63da46;
-    }
-
-    &--sale {
-      padding-left: 10px;
-      background-color: #f24d4d;
-    }
-
-    &--tip {
-      padding-left: 10px;
-      background-color: orange;
-    }
   }
 }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Product.scss";
+import { Label } from '../Label/Label';
 
 interface ProductProps {
   key: number;
@@ -30,29 +31,11 @@ export const Product: React.FC<ProductProps> = ({key, imgSrc, title, getStatusCl
         </div>
       </div>
       <div className="product__label">
-        {flags.map((flag) => {
-          if (flag === "Novinka") {
-            return (
-              <div key={flag} className="product__label--news">
-                Novinka
-              </div>
-            );
-          }
-          if (flag === "Výprodej") {
-            return (
-              <div key={flag} className="product__label--sale">
-                Výprodej
-              </div>
-            );
-          }
-          if (flag === "Tip") {
-            return (
-              <div key={flag} className="product__label--tip">
-                Tip
-              </div>
-            );
-          }
-          return null;
+        {flags.map((flag, index) => {
+
+          return (
+            <Label key={index} flag={flag} />
+          )
         })}
       </div>
     </div>

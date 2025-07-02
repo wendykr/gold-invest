@@ -1,0 +1,21 @@
+.label {
+  width: 75px;
+  height: auto;
+  color: #ffffff;
+}
+
+.news, .sale, .tip {
+  padding-left: 10px;
+}
+
+.news {
+  background-color: #63da46;
+}
+
+.sale {
+  background-color: #f24d4d;
+}
+
+.tip {
+  background-color: orange;
+}/*# sourceMappingURL=Label.css.map */
